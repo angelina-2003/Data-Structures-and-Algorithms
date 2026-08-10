@@ -5,8 +5,17 @@
 # returns: Indexes of two numbers such that they add up to target
 
 
-            
-                
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        seen = {}
+
+        for index,num in enumerate(nums):
+            need = target - num
+            if need in seen:
+                return [seed[need],index]
+            seen[num] = i
+        
+        return []
 
 
 
